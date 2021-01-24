@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#game-grid {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.grid-square {
+    border: 1px solid black;
+    transition: background-color 500ms;
+}
+
+.grid-square:hover {
+    cursor: pointer;
+}
+
+.activated {
+    background-color: rebeccapurple;
+}
